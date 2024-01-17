@@ -59,15 +59,5 @@ namespace WCRUD_IL29.Properties {
                 resourceCulture = value;
             }
         }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap _8a1e98fa_6ce0_46ed_a61a_d6a4a397979f {
-            get {
-                object obj = ResourceManager.GetObject("8a1e98fa-6ce0-46ed-a61a-d6a4a397979f", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
     }
 }

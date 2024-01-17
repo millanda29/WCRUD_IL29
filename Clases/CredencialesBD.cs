@@ -155,7 +155,25 @@ namespace WCRUD_IL29.Clases
             }
         }
 
+        public bool ValidarCredenciales(string nombreUsuario, string contraseña)
+        {
+            using (Conexion)
+            {
+                Conexion.Open();
 
+                string query = "SELECT COUNT(*) FROM Credenciales WHERE NombreUsuario = @NombreUsuario AND Contraseña = @Contraseña";
 
+                using (SqlCommand command = new SqlCommand(query, Conexion))
+                {
+                    command.Parameters.AddWithValue("@NombreUsuario", nombreUsuario);
+                    command.Parameters.AddWithValue("@Contraseña", contraseña);
+
+                    int result = (int)command.ExecuteScalar();
+
+                    return result > 0;
+                }
+            }
+
+        }
     }
 }

@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace WCRUD_IL29
+namespace WCRUD_IL29.UI.Persona
 {
-    public partial class Form1 : Form
+    public partial class UpdatePersona : Form
     {
-        public Form1()
+        public UpdatePersona()
         {
             InitializeComponent();
         }

@@ -47,14 +47,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Clases\Credenciales.cs" />
-    <Compile Include="Clases\Persona.cs" />
+    <Compile Include="Clases\CredencialesBD.cs" />
+    <Compile Include="Clases\PersonaBD.cs" />
     <Compile Include="Conexion\ConexionBD.cs" />
-    <Compile Include="Form1.cs">
+    <Compile Include="UI\Principal.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="UI\Principal.Designer.cs">
+      <DependentUpon>Principal.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -63,6 +63,36 @@
     </Compile>
     <Compile Include="UI\Credenciales\Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Credenciales\NewCredencial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Credenciales\NewCredencial.Designer.cs">
+      <DependentUpon>NewCredencial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Persona\DeletePersona.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Persona\DeletePersona.Designer.cs">
+      <DependentUpon>DeletePersona.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Persona\NewPersona.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Persona\NewPersona.Designer.cs">
+      <DependentUpon>NewPersona.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Persona\Persona.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Persona\Persona.Designer.cs">
+      <DependentUpon>Persona.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Persona\UpdatePersona.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Persona\UpdatePersona.Designer.cs">
+      <DependentUpon>UpdatePersona.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -76,6 +106,12 @@
     </Compile>
     <EmbeddedResource Include="UI\Credenciales\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Persona\Persona.resx">
+      <DependentUpon>Persona.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Principal.resx">
+      <DependentUpon>Principal.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -92,10 +128,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include=".gitignore" />
-    <None Include="Resources\8a1e98fa-6ce0-46ed-a61a-d6a4a397979f.jpeg" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="UI\Persona\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

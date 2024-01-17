@@ -29,30 +29,22 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
-            this.BttCancelar = new System.Windows.Forms.Button();
             this.TextUserName = new System.Windows.Forms.Label();
             this.TextContraseña = new System.Windows.Forms.Label();
             this.UserNameText = new System.Windows.Forms.TextBox();
             this.ContraseñaText = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.TextPrincipal = new System.Windows.Forms.Label();
             this.ImgLogin = new System.Windows.Forms.PictureBox();
+            this.TextPrincipal = new System.Windows.Forms.Label();
             this.BttIngresar = new System.Windows.Forms.Button();
             this.BttRegistrar = new System.Windows.Forms.Button();
             this.TextSecundario = new System.Windows.Forms.Label();
+            this.progressVerificacion = new System.Windows.Forms.ProgressBar();
+            this.StatusBar = new System.Windows.Forms.Label();
+            this.statusLabel = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ImgLogin)).BeginInit();
             this.SuspendLayout();
-            // 
-            // BttCancelar
-            // 
-            this.BttCancelar.Location = new System.Drawing.Point(362, 138);
-            this.BttCancelar.Name = "BttCancelar";
-            this.BttCancelar.Size = new System.Drawing.Size(90, 35);
-            this.BttCancelar.TabIndex = 1;
-            this.BttCancelar.Text = "Cancelar";
-            this.BttCancelar.UseVisualStyleBackColor = true;
-            this.BttCancelar.Click += new System.EventHandler(this.BttCancelar_Click);
             // 
             // TextUserName
             // 
@@ -87,6 +79,7 @@
             this.ContraseñaText.Name = "ContraseñaText";
             this.ContraseñaText.Size = new System.Drawing.Size(156, 20);
             this.ContraseñaText.TabIndex = 5;
+            this.ContraseñaText.UseSystemPasswordChar = true;
             // 
             // panel1
             // 
@@ -97,6 +90,16 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(154, 248);
             this.panel1.TabIndex = 9;
+            // 
+            // ImgLogin
+            // 
+            this.ImgLogin.Image = ((System.Drawing.Image)(resources.GetObject("ImgLogin.Image")));
+            this.ImgLogin.Location = new System.Drawing.Point(-51, 0);
+            this.ImgLogin.Name = "ImgLogin";
+            this.ImgLogin.Size = new System.Drawing.Size(253, 247);
+            this.ImgLogin.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ImgLogin.TabIndex = 0;
+            this.ImgLogin.TabStop = false;
             // 
             // TextPrincipal
             // 
@@ -109,21 +112,11 @@
             this.TextPrincipal.TabIndex = 0;
             this.TextPrincipal.Text = "LOGIN USER";
             // 
-            // ImgLogin
-            // 
-            this.ImgLogin.Image = ((System.Drawing.Image)(resources.GetObject("ImgLogin.Image")));
-            this.ImgLogin.Location = new System.Drawing.Point(-51, 0);
-            this.ImgLogin.Name = "ImgLogin";
-            this.ImgLogin.Size = new System.Drawing.Size(253, 247);
-            this.ImgLogin.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.ImgLogin.TabIndex = 0;
-            this.ImgLogin.TabStop = false;
-            // 
             // BttIngresar
             // 
-            this.BttIngresar.Location = new System.Drawing.Point(245, 138);
+            this.BttIngresar.Location = new System.Drawing.Point(305, 135);
             this.BttIngresar.Name = "BttIngresar";
-            this.BttIngresar.Size = new System.Drawing.Size(90, 35);
+            this.BttIngresar.Size = new System.Drawing.Size(90, 24);
             this.BttIngresar.TabIndex = 10;
             this.BttIngresar.Text = "Ingresar";
             this.BttIngresar.UseVisualStyleBackColor = true;
@@ -149,11 +142,38 @@
             this.TextSecundario.TabIndex = 12;
             this.TextSecundario.Text = "Si no cuenta con credenciales haga clik en registrar.";
             // 
+            // progressVerificacion
+            // 
+            this.progressVerificacion.Location = new System.Drawing.Point(215, 177);
+            this.progressVerificacion.Name = "progressVerificacion";
+            this.progressVerificacion.Size = new System.Drawing.Size(280, 10);
+            this.progressVerificacion.TabIndex = 13;
+            // 
+            // StatusBar
+            // 
+            this.StatusBar.AutoSize = true;
+            this.StatusBar.Location = new System.Drawing.Point(209, 174);
+            this.StatusBar.Name = "StatusBar";
+            this.StatusBar.Size = new System.Drawing.Size(0, 13);
+            this.StatusBar.TabIndex = 14;
+            // 
+            // statusLabel
+            // 
+            this.statusLabel.AutoSize = true;
+            this.statusLabel.Location = new System.Drawing.Point(218, 146);
+            this.statusLabel.Name = "statusLabel";
+            this.statusLabel.Size = new System.Drawing.Size(35, 13);
+            this.statusLabel.TabIndex = 15;
+            this.statusLabel.Text = "label1";
+            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(549, 248);
+            this.Controls.Add(this.statusLabel);
+            this.Controls.Add(this.StatusBar);
+            this.Controls.Add(this.progressVerificacion);
             this.Controls.Add(this.TextSecundario);
             this.Controls.Add(this.BttRegistrar);
             this.Controls.Add(this.BttIngresar);
@@ -163,9 +183,9 @@
             this.Controls.Add(this.UserNameText);
             this.Controls.Add(this.TextContraseña);
             this.Controls.Add(this.TextUserName);
-            this.Controls.Add(this.BttCancelar);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "Login";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.ImgLogin)).EndInit();
@@ -175,7 +195,6 @@
         }
 
         #endregion
-        private System.Windows.Forms.Button BttCancelar;
         private System.Windows.Forms.Label TextUserName;
         private System.Windows.Forms.Label TextContraseña;
         private System.Windows.Forms.TextBox UserNameText;
@@ -186,5 +205,8 @@
         private System.Windows.Forms.Button BttIngresar;
         private System.Windows.Forms.Button BttRegistrar;
         private System.Windows.Forms.Label TextSecundario;
+        private System.Windows.Forms.ProgressBar progressVerificacion;
+        private System.Windows.Forms.Label StatusBar;
+        private System.Windows.Forms.Label statusLabel;
     }
 }

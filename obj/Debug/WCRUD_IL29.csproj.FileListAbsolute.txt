@@ -7,3 +7,6 @@ C:\Users\maikd\source\repos\WCRUD_IL29\obj\Debug\WCRUD_IL29.csproj.GenerateResou
 C:\Users\maikd\source\repos\WCRUD_IL29\obj\Debug\WCRUD_IL29.csproj.CoreCompileInputs.cache
 C:\Users\maikd\source\repos\WCRUD_IL29\obj\Debug\WCRUD_IL29.exe
 C:\Users\maikd\source\repos\WCRUD_IL29\obj\Debug\WCRUD_IL29.pdb
+C:\Users\maikd\source\repos\WCRUD_IL29\obj\Debug\WCRUD_IL29.UI.Credenciales.Login.resources
+C:\Users\maikd\source\repos\WCRUD_IL29\obj\Debug\WCRUD_IL29.UI.Persona.Persona.resources
+C:\Users\maikd\source\repos\WCRUD_IL29\obj\Debug\WCRUD_IL29.Principal.resources
