@@ -160,11 +160,11 @@
             // statusLabel
             // 
             this.statusLabel.AutoSize = true;
-            this.statusLabel.Location = new System.Drawing.Point(218, 146);
+            this.statusLabel.Location = new System.Drawing.Point(218, 161);
             this.statusLabel.Name = "statusLabel";
-            this.statusLabel.Size = new System.Drawing.Size(35, 13);
+            this.statusLabel.Size = new System.Drawing.Size(37, 13);
             this.statusLabel.TabIndex = 15;
-            this.statusLabel.Text = "label1";
+            this.statusLabel.Text = "Status";
             // 
             // Login
             // 

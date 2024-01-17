@@ -107,8 +107,20 @@
     <EmbeddedResource Include="UI\Credenciales\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UI\Credenciales\NewCredencial.resx">
+      <DependentUpon>NewCredencial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Persona\DeletePersona.resx">
+      <DependentUpon>DeletePersona.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Persona\NewPersona.resx">
+      <DependentUpon>NewPersona.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UI\Persona\Persona.resx">
       <DependentUpon>Persona.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Persona\UpdatePersona.resx">
+      <DependentUpon>UpdatePersona.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\Principal.resx">
       <DependentUpon>Principal.cs</DependentUpon>

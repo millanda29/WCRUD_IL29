@@ -37,14 +37,10 @@ namespace WCRUD_IL29.UI.Credenciales
         }
 
 
-        private void BttCancelar_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void BttRegistrar_Click(object sender, EventArgs e)
         {
-
+            NewCredencial newCredencial = new NewCredencial();
+            newCredencial.ShowDialog();
         }
 
         private void ValidarCredenciales(string nombreUsuario, string contraseña)
